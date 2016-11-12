@@ -9,7 +9,3 @@ RUN wget -q -P /tmp http://downloads.typesafe.com/akka/akka_2.11-$AKKA_VERSION.z
   && rm -rf /tmp/akka-$AKKA_VERSION \
   && chmod +x /usr/local/bin/akka-cluster
 
-COPY leave_cluster.sh /usr/local/bin/leave-cluster
-
-RUN chmod +x /usr/local/bin/leave-cluster
-
